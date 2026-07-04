@@ -1,10 +1,13 @@
 # Luong Thai Khang — Research Profile Website
 
-File structure:
+Updated academic-style profile page matching the printed CV.
+
+## File structure
 
 ```text
-khang_research_profile_split/
+profile_site_updated/
 ├── index.html
+├── CV.pdf
 ├── css/
 │   └── styles.css
 ├── javascript/
@@ -13,4 +16,4 @@ khang_research_profile_split/
     └── avatar.jpg
 ```
 
-Edit `index.html` for text/content, `css/styles.css` for visual design, `javascript/script.js` for interactions, and replace `img/avatar.jpg` to change the photo.
+Deploy the folder contents to GitHub Pages. The CV link in `index.html` points to `CV.pdf` in the site root.
