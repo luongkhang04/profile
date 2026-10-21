@@ -95,6 +95,22 @@
     \vspace{-2.4mm}
 }
 
+\newcommand{\resumePublication}[5]{
+\vspace{0.5mm}\item
+    \begin{minipage}[t]{\linewidth}
+        \if\relax\detokenize{#4}\relax
+            \textbf{#1}
+        \else
+            \textbf{\href{#4}{#1}}
+        \fi\par
+        \vspace{0.5mm}
+        {\footnotesize\textit{#2}\par}
+        \vspace{0.5mm}
+        {\footnotesize #3#5\par}
+    \end{minipage}
+    \vspace{1mm}
+}
+
 \newcommand{\resumeProject}[4]{
 \vspace{0.5mm}\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -160,7 +176,7 @@
 \section{\textbf{Summary}}
 \vspace{0.5mm}
 \small{
-B.Sc. candidate in Computer Science at Hanoi University of Science and Technology, graduating in July 2026. My research focuses on bandits, reinforcement learning, and decision-making under uncertainty. I am first author of an ICML 2026 accepted paper on variance-driven exploration, and I am seeking Master/Ph.D. opportunities and research collaborations in bandit theory, reinforcement learning, offline/robust decision-making, and statistical learning theory.
+B.Sc. graduate in Computer Science from Hanoi University of Science and Technology (July 2026). My research focuses on bandits, reinforcement learning, and decision-making under uncertainty. I am first author of papers at ICML 2026 and NeurIPS 2026 (Spotlight), and I am seeking Master/Ph.D. opportunities and research collaborations in bandit theory, reinforcement learning, offline/robust decision-making, and statistical learning theory.
 }
 
 % =========================
@@ -182,17 +198,41 @@ B.Sc. candidate in Computer Science at Hanoi University of Science and Technolog
 % =========================
 % Publications
 % =========================
-\section{\textbf{Publications}}
+\section{\textbf{Publications and Manuscripts}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-{\parbox[t]{0.78\textwidth}{\href{https://openreview.net/forum?id=34cmbsgpT5}{Variance Driven Exploration: A Provable and Efficient Methodology for\\Pure Exploration in Highly Stochastic Environments}}}{Accepted at ICML}
-{\textbf{Khang Luong}, Nam Nguyen, Hoang Ta, Hung The Tran, Tuan Dam.}{2026}
+\resumePublication
+{Variance Driven Exploration: A Provable and Efficient Methodology for Pure Exploration \\in Highly Stochastic Environments}
+{\textbf{Khang Luong}, Nam Nguyen, Hoang Ta, Hung The Tran, Tuan Quang Dam.}
+{ICML 2026 (Regular).}
+{https://openreview.net/forum?id=34cmbsgpT5}
+{ \href{https://arxiv.org/abs/2608.21995}{arXiv:2608.21995}}
 
-\resumeSubheading
-{\parbox[t]{0.78\textwidth}{Nearly Optimal Fixed-Confidence Best-Arm Identification with 1-Bit Feedback}}{Submission to NeurIPS}
-{\textbf{Khang Luong}, Dinh Thai Son, Hoang Ta, Hung The Tran, Tuan Dam.}{2026}
+\resumePublication
+{Nearly Optimal Fixed-Confidence Best-Arm Identification with 1-Bit Feedback}
+{\textbf{Khang Luong}, Dinh Thai Son, Hoang Ta, Hung The Tran, Tuan Quang Dam.}
+{NeurIPS 2026 (Spotlight).}
+{https://openreview.net/forum?id=6ZgRA8gi3F}
+{ \href{https://arxiv.org/abs/2610.02771}{arXiv:2610.02771}}
+
+\resumePublication
+{Minimax Optimality for Factored Optimal-Transport Distributionally-Robust Policy Learning \\in Contextual Bandits}
+{\textbf{Khang Luong}, Trung Nguyen, Hoang Ta, Tuan Quang Dam, Hung Tran-The.}
+{ICLR 2027 Conference Submission.}
+{}{}
+
+\resumePublication
+{What Action Geometry Buys: A Design Space for Optimal-Transport Bellman Backups}
+{Trung Nguyen, \textbf{Khang Luong}, Tuan Quang Dam.}
+{ICLR 2027 Conference Submission.}
+{}{}
+
+\resumePublication
+{Instance-dependent $\beta$-Optimality for Best-Arm Identification under One-Bit Threshold Feedback}
+{Dinh Thai Son, \textbf{Khang Luong}, Hoang Ta, Tuan Quang Dam.}
+{AISTATS 2027 Conference Submission.}
+{}{}
 
 \resumeSubHeadingListEnd
 
@@ -202,13 +242,6 @@ B.Sc. candidate in Computer Science at Hanoi University of Science and Technolog
 \section{\textbf{Experience}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
-
-\resumeSubheading
-{HUST Data Science Laboratory}{Hanoi, Vietnam}
-{Research Member}{Feb. 2025 -- Jul. 2026}
-\resumeItemListStart
-\item Conducted research on machine learning and decision intelligence under uncertainty.
-\resumeItemListEnd
 
 \resumeSubheading
 {VinDynamics}{Hanoi, Vietnam}
@@ -234,18 +267,17 @@ B.Sc. candidate in Computer Science at Hanoi University of Science and Technolog
 \resumeSubHeadingListStart
 
 \resumeProject
-{Variance Driven Exploration (VarDE)}{HUST Data Science Laboratory}{}{}
+{Variance Driven Exploration (VarDE)}{Hanoi University of Science and Technology (HUST)}{}{}
 \resumeItemListStart
 \item Derived influence-weighted variance-driven sampling rules for exploration frameworks, providing theoretical guarantees on variance decay and simple regret.
 \item Applied VarDE to Best-Arm Identification, Monte Carlo Tree Search, and Best-Policy Identification.
 \resumeItemListEnd
 
 \resumeProject
-{Best-Arm Identification (BAI) with 1-Bit Feedback}{HUST Data Science Laboratory}{}{}
+{Best-Arm Identification (BAI) with 1-Bit Feedback}{Hanoi University of Science and Technology (HUST)}{}{}
 \resumeItemListStart
 \item Developed a BAI algorithm with 1-bit mean-estimation, matching worst-case lower bound for 1-bit feedback.
 \item Currently extending to instance-dependent bounds and asymptotically optimal parametric algorithms.
-\item Applying 1-bit mean-estimation to Federated Learning to achieve privacy, corruption robustness, and communication efficiency.
 \resumeItemListEnd
 
 \resumeProject
@@ -279,7 +311,6 @@ B.Sc. candidate in Computer Science at Hanoi University of Science and Technolog
 % =========================
 % Online Profile
 % =========================
-\newpage
 
 \vspace*{0.25\textheight}
 \begin{center}
