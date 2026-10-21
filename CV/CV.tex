@@ -1,0 +1,296 @@
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt}
+
+% Hyperlink setup
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+   \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+
+\newcommand{\cvsection}[1]{
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+
+% Font options (use Palatino-like)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont}
+
+\begin{document}
+\headerfontiii
+
+% =========================
+% Header
+% =========================
+\begin{center}
+    {\Huge\textbf{Luong Thai Khang}}
+\end{center}
+\vspace{-5mm}
+
+\begin{center}
+    \small{
+    +84 904 410 262 \,|\, 
+    \href{mailto:luongkhang448@gmail.com}{luongkhang448@gmail.com} \,|\, 
+    \href{https://github.com/luongkhang04}{github.com/luongkhang04}
+    }
+\end{center}
+
+% =========================
+% Summary
+% =========================
+\section{\textbf{Summary}}
+\vspace{0.5mm}
+\small{
+B.Sc. candidate in Computer Science at Hanoi University of Science and Technology, graduating in July 2026. My research focuses on bandits, reinforcement learning, and decision-making under uncertainty. I am first author of an ICML 2026 accepted paper on variance-driven exploration, and I am seeking Master/Ph.D. opportunities and research collaborations in bandit theory, reinforcement learning, offline/robust decision-making, and statistical learning theory.
+}
+
+% =========================
+% Education
+% =========================
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Hanoi University of Science and Technology (HUST)}{Hanoi, Vietnam}
+{B.Sc.\ in Computer Science}{2022 -- Jul. 2026}
+\resumeItemListStart
+\item GPA (CPA): 3.73/4.0
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% =========================
+% Publications
+% =========================
+\section{\textbf{Publications}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\parbox[t]{0.78\textwidth}{\href{https://openreview.net/forum?id=34cmbsgpT5}{Variance Driven Exploration: A Provable and Efficient Methodology for\\Pure Exploration in Highly Stochastic Environments}}}{Accepted at ICML}
+{\textbf{Khang Luong}, Nam Nguyen, Hoang Ta, Hung The Tran, Tuan Dam.}{2026}
+
+\resumeSubheading
+{\parbox[t]{0.78\textwidth}{Nearly Optimal Fixed-Confidence Best-Arm Identification with 1-Bit Feedback}}{Submission to NeurIPS}
+{\textbf{Khang Luong}, Dinh Thai Son, Hoang Ta, Hung The Tran, Tuan Dam.}{2026}
+
+\resumeSubHeadingListEnd
+
+% =========================
+% Experience
+% =========================
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{HUST Data Science Laboratory}{Hanoi, Vietnam}
+{Research Member}{Feb. 2025 -- Jul. 2026}
+\resumeItemListStart
+\item Conducted research on machine learning and decision intelligence under uncertainty.
+\resumeItemListEnd
+
+\resumeSubheading
+{VinDynamics}{Hanoi, Vietnam}
+{AI Intern (Robotics)}{Jun. 2025 -- May 2026}
+\resumeItemListStart
+\item Worked on perception and control pipelines for robotic grasping and hand--object interaction.
+\resumeItemListEnd
+
+\resumeSubheading
+{FPT Quantum AI \& Cyber Security Institute}{Hanoi, Vietnam}
+{Research Member}{Jun. 2026 -- Present}
+\resumeItemListStart
+\item Conducting research on offline policy evaluation and learning for contextual bandits.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% =========================
+% Projects
+% =========================
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Variance Driven Exploration (VarDE)}{HUST Data Science Laboratory}{}{}
+\resumeItemListStart
+\item Derived influence-weighted variance-driven sampling rules for exploration frameworks, providing theoretical guarantees on variance decay and simple regret.
+\item Applied VarDE to Best-Arm Identification, Monte Carlo Tree Search, and Best-Policy Identification.
+\resumeItemListEnd
+
+\resumeProject
+{Best-Arm Identification (BAI) with 1-Bit Feedback}{HUST Data Science Laboratory}{}{}
+\resumeItemListStart
+\item Developed a BAI algorithm with 1-bit mean-estimation, matching worst-case lower bound for 1-bit feedback.
+\item Currently extending to instance-dependent bounds and asymptotically optimal parametric algorithms.
+\item Applying 1-bit mean-estimation to Federated Learning to achieve privacy, corruption robustness, and communication efficiency.
+\resumeItemListEnd
+
+\resumeProject
+{Offline Policy Evaluation and Learning for Contextual Bandits}{FPT Quantum AI \& Cyber Security Institute}{}{}
+\resumeItemListStart
+\item Study distributionally robust offline contextual bandits under context shift and reward shift.
+\item Develop pessimistic offline policy evaluation and learning methods based on optimal-transport DRO objectives.
+\resumeItemListEnd
+
+\resumeProject
+{Vision-Based Robotic Hand Teleoperation and Autonomous Manipulation}{VinDynamics}{}{}
+\resumeItemListStart
+\item Developed a vision-based teleoperation system for dexterous robotic hand control.
+\item Integrated visual perception with control policies for autonomous object manipulation.
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% =========================
+% Skills
+% =========================
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+  \resumeSubItem{Mathematics:}{Probability Theory, Optimization, Linear Algebra, Calculus}
+  \resumeSubItem{Machine Learning:}{Reinforcement Learning, Bandits, Deep Learning}
+  \resumeSubItem{Programming:}{Python, PyTorch, TensorFlow, C++}
+  \resumeSubItem{Languages:}{English (IELTS 7.0)}
+\resumeHeadingSkillEnd
+
+% =========================
+% Online Profile
+% =========================
+\newpage
+
+\vspace*{0.25\textheight}
+\begin{center}
+    {\Large\textbf{Online Profile}}\\[4mm]
+
+    \includegraphics[width=4cm]{profile_qr.png}\\[4mm]
+
+    \small{
+    \href{https://luongkhang04.github.io/profile/}
+    {luongkhang04.github.io/profile}
+    }
+\end{center}
+
+\end{document}

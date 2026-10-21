@@ -7,7 +7,10 @@ Updated academic-style profile page matching the printed CV.
 ```text
 profile_site_updated/
 ├── index.html
-├── CV.pdf
+├── CV
+│   │── CV.pdf
+│   │── CV.tex
+│   └── profile_qr.png
 ├── css/
 │   └── styles.css
 ├── javascript/
