@@ -11,7 +11,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height, 63px);
+}
 body {
   margin: 0;
   color: var(--ink);
