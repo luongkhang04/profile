@@ -46,7 +46,6 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 
 .brand {
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.12rem;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -78,6 +77,11 @@ h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--ink);
   line-height: 1.16;
+}
+
+.brand,
+.profile-details h2 {
+  font-family: Lora, Cambria, "Noto Serif", "Liberation Serif", system-ui, sans-serif;
 }
 
 h1 {
@@ -136,6 +140,7 @@ h1 {
 
 .profile-details { margin-top: 16px; font-size: 0.96rem; }
 .profile-details h2 { font-size: 1.35rem; margin: 0 0 6px; }
+.profile-details h2 span { display: block; margin-top: 0.2em; font-size: 0.86em; }
 .profile-details p { margin: 6px 0; color: var(--muted); }
 
 .section { padding: 42px 0; border-bottom: 1px solid var(--line); }

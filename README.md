@@ -1,4 +1,4 @@
-# Luong Thai Khang — Research Profile Website
+# Khang Luong (Lương Thái Khang) — Research Profile Website
 
 Updated academic-style profile page matching the printed CV.
 
